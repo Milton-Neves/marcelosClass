@@ -49,6 +49,15 @@ object Form1: TForm1
       TabOrder = 1
       OnClick = Button1Click
     end
+    object Button2: TButton
+      Left = 352
+      Top = 21
+      Width = 75
+      Height = 25
+      Caption = 'Novo'
+      TabOrder = 2
+      OnClick = Button2Click
+    end
   end
   object DBGrid1: TDBGrid
     Left = 0
@@ -64,6 +73,7 @@ object Form1: TForm1
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnDblClick = DBGrid1DblClick
     Columns = <
       item
         Expanded = False
@@ -106,6 +116,7 @@ object Form1: TForm1
     Top = 336
   end
   object qrUsuarios: TFDQuery
+    Active = True
     Connection = FDConnection1
     SQL.Strings = (
       'SELECT * FROM nomE'
@@ -146,6 +157,7 @@ object Form1: TForm1
       FieldName = 'password'
       Origin = 'password'
       Required = True
+      OnSetText = qrUsuariospasswordSetText
     end
   end
   object DataSource1: TDataSource

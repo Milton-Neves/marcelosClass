@@ -18,6 +18,7 @@ type
     Label4: TLabel;
     DBEdit4: TDBEdit;
     DBNavigator1: TDBNavigator;
+    procedure DBNavigator1Click(Sender: TObject; Button: TNavigateBtn);
   private
     { Private declarations }
   public
@@ -32,5 +33,14 @@ implementation
 {$R *.dfm}
 
 uses Unit1;
+
+procedure TForm2.DBNavigator1Click(Sender: TObject; Button: TNavigateBtn);
+begin
+  if Button = TNavigateBtn.nbPost then
+  begin
+    Close;
+  end;
+
+end;
 
 end.

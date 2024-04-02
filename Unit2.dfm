@@ -81,6 +81,7 @@ object Form2: TForm2
     Height = 21
     DataField = 'password'
     DataSource = Form1.DataSource1
+    PasswordChar = '*'
     TabOrder = 3
   end
   object DBNavigator1: TDBNavigator
@@ -92,6 +93,7 @@ object Form2: TForm2
     VisibleButtons = [nbInsert, nbDelete, nbEdit, nbPost, nbCancel, nbRefresh]
     Align = alBottom
     TabOrder = 4
+    OnClick = DBNavigator1Click
     ExplicitLeft = 312
     ExplicitTop = 208
     ExplicitWidth = 240
