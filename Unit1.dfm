@@ -125,6 +125,7 @@ object Form1: TForm1
       FieldName = 'codUsuario'
       Origin = 'codUsuario'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object qrUsuariosnomeusuario: TStringField
       DisplayLabel = 'Nome'
